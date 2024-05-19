@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PET EXPO</title>
+    <link rel="stylesheet" href="page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="flex">
+        <h1>PET EXPO</h1>
+        <ul class="header-list flex">
+          <li><a href="#gallery" onclick="loadGallery('dogs')">Dogs</a></li>
+          <li><a href="#gallery" onclick="loadGallery('cats')">Cats</a></li>
+          <li><a href="#gallery" onclick="loadGallery('birds')">Birds</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container flex introduction">
+      <div class="introduction-text">
+        <h2>PET EXPO</h2>
+        <p>Here to help you find your best friend</p>
+      </div>
+      <img src="../pets.jpg" alt="" />
+    </div>
+
+    <section id="gallery">
+      <div class="container">
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Search by name..."
+        />
+        <div id="cards-container"></div>
+      </div>
+    </section>
+
+    <div id="popup-bg" onclick="closePopup()"></div>
+
+    <section>
+      <div class="container section">
+        <div class="about">
+          <h4>About Us</h4>
+          <p>
+            PET EXPO is built for animal-lovers, so of course we've got animal
+            resources for you! Check out our Animals page to learn about dogs,
+            birds, cats.
+          </p>
+          <span>Help you to find your pet.</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container section">
+        <div class="about">
+          <h4>Contact Us</h4>
+          <div class="contact-forms flex">
+            <div class="address">
+              <i class="fa-sharp fa-solid fa-location-dot"></i>
+              <p>Rruga:Perlat Rexhepi Tirane</p>
+            </div>
+            <div class="phone">
+              <i class="fa-solid fa-phone"></i>
+              <p>+355 68 9887 789</p>
+              <p>08225777</p>
+            </div>
+            <div class="email">
+              <i class="fa-solid fa-envelope"></i>
+              <p>petexpo@yahoo.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-font footer-font">
+        <div class="container">
+          <ul class="flex list">
+            <li><a href="">Help & General Contact</a></li>
+            <li><a href="">Diversity Initiatives</a></li>
+            <li><a href="">Submit Website Blug</a></li>
+            <li><a href="">Status</a></li>
+          </ul>
+          <div class="copyright flex">
+            <p>
+              <small>
+                <span>Copyright 2021-2024.</span>
+                <span><a href="">EXPO PET</a></span>
+                <span><a href="">Legal Staments</a></span>
+                <span><a href="">Privacy Policy</a></span>
+              </small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="page.js"></script>
+  </body>
+</html>
